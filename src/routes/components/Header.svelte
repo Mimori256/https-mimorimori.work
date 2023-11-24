@@ -1,7 +1,7 @@
 <span class="flex justify-between items-center mb-9">
 	<span class="flex flex-col">
 		<a href="/"
-			><p class="text-4xl mt-4 relative inline-block underline-effect">mimorimori.dev</p></a
+			><p class="text-4xl mt-4 relative inline-block underline-effect">mimorimori.work</p></a
 		>
 		<p class="text-slate-400 text-sm">Mimori's Sandbox</p>
 	</span>
