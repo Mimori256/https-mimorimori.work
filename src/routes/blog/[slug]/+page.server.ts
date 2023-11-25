@@ -3,7 +3,7 @@ import matter from 'gray-matter';
 
 export async function load(params) {
 	const slug = params.params.slug;
-	const markdownPath = `posts/${slug}.md`;
+	const markdownPath = `./posts/${slug}.md`;
 
 	try {
 		const markdown = fs.readFileSync(markdownPath).toString();
