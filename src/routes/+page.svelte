@@ -3,7 +3,10 @@
 	import SocialSection from './components/SocialSection.svelte';
 	import Works from './components/Works.svelte';
 	import Blog from './components/Blog.svelte';
+	import type ArticleMetadata from './types/ArticleMetadata';
 	import { MetaTags } from 'svelte-meta-tags';
+
+	export let data;
 </script>
 
 <MetaTags
@@ -24,5 +27,5 @@
 	<About />
 	<SocialSection />
 	<Works />
-	<Blog />
+	<Blog metadataList={data.metadataList} />
 </div>
