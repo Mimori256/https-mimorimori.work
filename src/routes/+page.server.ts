@@ -4,7 +4,7 @@ import type ArticleMetadata from './types/ArticleMetadata';
 
 async function fetchArticlesMetadata(files: string[]): Promise<ArticleMetadata[]> {
 	const metadataList = files.map((file) => {
-		const markdown = fs.readFileSync(`static/articles/${file}`).toString();
+		const markdown = fs.readFileSync(`posts/${file}`).toString();
 		const parsedMarkdown = matter(markdown);
 		return parsedMarkdown.data as ArticleMetadata;
 	});
@@ -23,7 +23,7 @@ const sortMetadataByDate = (metadataList: ArticleMetadata[]) => {
 
 export async function load() {
 	// Fetch all the files in the articles directory
-	const files = fs.readdirSync('static/articles');
+	const files = fs.readdirSync('posts/');
 	const slugs = files.map((file) => file.replace(/\.md$/, ''));
 	const metadataList: ArticleMetadata[] = await fetchArticlesMetadata(files);
 	const sortedList = sortMetadataByDate(metadataList);
