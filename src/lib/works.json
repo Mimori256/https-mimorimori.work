@@ -8,5 +8,16 @@
 		"title": "卒業要件チェッカー",
 		"url": "https://mimori256.github.io/Graduation-Checker/",
 		"description": "成績ファイルから卒業要件をチェック"
+	},
+	{
+		"title": "Tsukuba-syllabus",
+		"url": "https://chromewebstore.google.com/detail/tsukuba-syllabus/jplphmfnjbhjiibolbkbadnnjmoipjeb?hl=ja",
+		"description": "Manabaのコースページにシラバスへのリンクを追加"
+	},
+
+	{
+		"title": "modern-manaba (協力)",
+		"url": "https://chromewebstore.google.com/detail/modern-manaba/oimcohooopcpjnmdgijjicdhkifopbli?hl=ja&pli=1",
+		"description": "manabaのデザインをモダンに"
 	}
 ]
