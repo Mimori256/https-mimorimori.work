@@ -1,8 +1,7 @@
 type Article = {
 	title: string;
-	description: string;
 	date: string;
-	slug: string;
+	link: string;
 };
 
 export default Article;

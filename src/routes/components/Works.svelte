@@ -1,8 +1,6 @@
 <script lang="ts">
 	import Link from './Link.svelte';
 	import works from '$lib/works.json';
-	import type Work from '../types/Work';
-	let workList: Work[] = works;
 </script>
 
 <div class="mt-12">
