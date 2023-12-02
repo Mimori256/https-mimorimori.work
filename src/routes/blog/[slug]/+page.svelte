@@ -29,7 +29,7 @@
 	}}
 />
 
-<div class="mt-20 ml-12">
+<div class="mt-20 mx-6 sm:ml-12 sm:mr-0">
 	{#if !data.metadata}
 		<h1 class="text-3xl">ページが存在しません！</h1>
 	{:else}
