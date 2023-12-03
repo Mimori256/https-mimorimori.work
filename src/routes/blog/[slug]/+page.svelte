@@ -3,13 +3,19 @@
 	import SvelteMarkdown from 'svelte-markdown';
 	import { MetaTags } from 'svelte-meta-tags';
 	import ShareButton from './component/ShareButton.svelte';
+
+	import addHeader from './addHeader';
+	import addFootnote from './addFootnote';
+
 	export let data;
 	let url: string;
 	let textContent: string;
-	const source = data.content;
+	let parsedContent: string;
 
 	onMount(() => {
 		url = `https://mimorimori.work/blog/${data.metadata.slug}`;
+		parsedContent = addHeader(data.content);
+		parsedContent = addFootnote(parsedContent);
 		textContent = `${data.metadata.title} - Mimori's Sandbox`;
 	});
 </script>
@@ -40,7 +46,7 @@
 			<ShareButton {url} {textContent} />
 		</div>
 		<article class="prose max-w-none">
-			<SvelteMarkdown {source} />
+			<SvelteMarkdown source={parsedContent} />
 		</article>
 	{/if}
 </div>
