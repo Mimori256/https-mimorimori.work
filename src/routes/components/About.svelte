@@ -12,7 +12,7 @@
 			<Link href="https://twitter.com/chesscr" text="筑波大学 チェスサークル" />
 		</li>
 		<li class="list-disc mb-1">
-			<Link href="https://hack.nikkei.com/" text="謎のメディア企業(バイト)" />
+			<p>謎のメディア企業(バイト)</p>
 		</li>
 	</ul>
 	<p class="mt-5">言語とWebが好き。</p>
