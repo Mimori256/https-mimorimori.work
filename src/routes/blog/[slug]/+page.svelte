@@ -35,9 +35,10 @@
 	}}
 />
 
-<div class="mt-20 mx-6 sm:ml-12 sm:mr-0">
-	{#if !data.metadata}
-		<h1 class="text-3xl">ページが存在しません！</h1>
+<div class="mt-20 mx-6 pb-3 sm:ml-12 sm:mr-32">
+	{#if data.content === ''}
+		<h1 class="text-3xl mb-4">ブログ記事が存在しません！</h1>
+		<p><a href="/" class="text-slate-400 hover:text-blue-400">トップに戻る</a></p>
 	{:else}
 		<hr />
 		<h1 class="text-3xl">{data.metadata.title}</h1>

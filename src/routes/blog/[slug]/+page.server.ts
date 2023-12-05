@@ -25,8 +25,16 @@ export async function load(params) {
 	}
 	const url = `https://raw.githubusercontent.com/Mimori256/https-mimorimori.work/main/blog/${slug}.md`;
 	// fetch markdown content from url
-	const response = await fetch(url);
-	const markdown = await response.text();
-	const parsedMarkdown = matter(markdown);
-	return { metadata: parsedMarkdown.data, content: parsedMarkdown.content };
+	try {
+		const response = await fetch(url);
+		const markdown = await response.text();
+		const parsedMarkdown = matter(markdown);
+
+		if (parsedMarkdown.data.keys()) {
+			return { metadata: {}, content: '' };
+		}
+		return { metadata: parsedMarkdown.data, content: parsedMarkdown.content };
+	} catch (e) {
+		return { metadata: {}, content: '' };
+	}
 }
