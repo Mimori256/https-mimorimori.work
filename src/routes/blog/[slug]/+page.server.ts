@@ -30,7 +30,7 @@ export async function load(params) {
 		const markdown = await response.text();
 		const parsedMarkdown = matter(markdown);
 
-		if (parsedMarkdown.data.keys()) {
+		if (parsedMarkdown.content === '404: Not Found') {
 			return { metadata: {}, content: '' };
 		}
 		return { metadata: parsedMarkdown.data, content: parsedMarkdown.content };
