@@ -35,7 +35,7 @@
 	}}
 />
 
-<div class="mt-20 mx-6 pb-3 sm:ml-12 sm:mr-32">
+<div class="mt-20 pb-3 mx-6 sm:w-3/5 sm:ml-32">
 	{#if data.content === ''}
 		<h1 class="text-3xl mb-4">ブログ記事が存在しません！</h1>
 		<p><a href="/" class="text-slate-400 hover:text-blue-400">トップに戻る</a></p>
@@ -46,7 +46,7 @@
 		<div class="mb-8">
 			<ShareButton {url} {textContent} />
 		</div>
-		<article class="prose max-w-none">
+		<article class="prose max-w-max">
 			<SvelteMarkdown source={parsedContent} />
 		</article>
 	{/if}

@@ -3,7 +3,7 @@
 	import articles from '$lib/articles.json';
 	import { MAX_ONE_PAGE_ARTICLES } from '../consts/consts';
 
-	let articleList = articles.slice(0, MAX_ONE_PAGE_ARTICLES);
+	let articleList = articles.slice(0, MAX_ONE_PAGE_ARTICLES).reverse();
 </script>
 
 <div class="mt-12 mb-6 sm:mb-0">
