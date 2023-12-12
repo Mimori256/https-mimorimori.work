@@ -12,7 +12,7 @@
 	onMount(() => {
 		parsedContent = data.content;
 		url = `https://mimorimori.work/blog/${data.metadata.slug}`;
-		textContent = `${data.metadata.title} | Mimori's Sandbox`;
+		textContent = `${data.metadata.title} Mimori's Sandbox`;
 	});
 </script>
 

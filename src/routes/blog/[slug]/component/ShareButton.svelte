@@ -3,6 +3,7 @@
 	export let textContent: string;
 
 	const openTwitter = () => {
+		url = url.replace('.md', '');
 		const twitterUrl = `https://twitter.com/intent/tweet?text=${textContent}&url=${url}`;
 		window.open(twitterUrl, '_blank');
 	};
