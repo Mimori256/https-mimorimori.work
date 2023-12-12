@@ -2,6 +2,13 @@
 	{
 		"title": "はじめまして",
 		"date": "2023-11-28",
-		"link": "/blog/first"
+		"link": "/blog/first",
+		"tags": "雑記"
+	},
+	{
+		"title": "就活したけど院進を考えてる話",
+		"date": "2023-12-12",
+		"link": "/blog/mast_advent_2023",
+		"tags": "雑記"
 	}
 ]
