@@ -10,7 +10,7 @@ const createOutputFromSections = (sections: string[][]): string => {
 };
 
 const addHeader = (text: string): string => {
-	const splited_text = text.split('\r\n');
+	const splited_text = text.split('\n');
 	let sections: Array<string[]> = [];
 	let tmpSection: string[] = [];
 	let isInContent = false;

@@ -1,5 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
+import addHeader from './addHeader';
+import addFootnote from './addFootnote';
 
 async function getLocalMarkdown(slug: string) {
 	const markdownPath = `blog/${slug}.md`;
@@ -33,7 +35,9 @@ export async function load(params) {
 		if (parsedMarkdown.content === '404: Not Found') {
 			return { metadata: {}, content: '' };
 		}
-		return { metadata: parsedMarkdown.data, content: parsedMarkdown.content };
+		let content = addHeader(parsedMarkdown.content);
+		content = addFootnote(content);
+		return { metadata: parsedMarkdown.data, content: content };
 	} catch (e) {
 		return { metadata: {}, content: '' };
 	}

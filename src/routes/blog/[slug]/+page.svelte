@@ -1,11 +1,8 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import SvelteMarkdown from 'svelte-markdown';
 	import { MetaTags } from 'svelte-meta-tags';
 	import ShareButton from './component/ShareButton.svelte';
-
-	import addHeader from './addHeader';
-	import addFootnote from './addFootnote';
+	import { onMount } from 'svelte';
 
 	export let data;
 	let url: string;
@@ -13,10 +10,9 @@
 	let parsedContent: string;
 
 	onMount(() => {
+		parsedContent = data.content;
 		url = `https://mimorimori.work/blog/${data.metadata.slug}`;
-		parsedContent = addHeader(data.content);
-		parsedContent = addFootnote(parsedContent);
-		textContent = `${data.metadata.title} - Mimori's Sandbox`;
+		textContent = `${data.metadata.title} | Mimori's Sandbox`;
 	});
 </script>
 
