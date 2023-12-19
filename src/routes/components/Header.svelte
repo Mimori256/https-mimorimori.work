@@ -3,7 +3,7 @@
 		<a href="/"
 			><p class="text-4xl mt-4 relative inline-block underline-effect">mimorimori.work</p></a
 		>
-		<p class="text-slate-400 text-sm">Mimori's Sandbox</p>
+		<p class="text-slate-700 text-sm">Mimori's Sandbox</p>
 	</span>
 </span>
 
