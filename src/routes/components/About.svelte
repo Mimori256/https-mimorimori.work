@@ -3,7 +3,7 @@
 </script>
 
 <div class="mb-10 sm:mb-0" role="region" aria-label="私のプロフィール">
-	<img src="/pfp.jpg" width="128px" height="128px" alt="私のアイコン" />
+	<img src="/pfp.svg" width="128px" height="128px" alt="私のアイコン" />
 	<ul class="mt-3" role="list">
 		<li class="list-disc mb-1">
 			<Link
