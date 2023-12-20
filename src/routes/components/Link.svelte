@@ -4,13 +4,17 @@
 	export let description: string;
 </script>
 
-<a
-	{href}
-	class="hover:text-blue-600 transition-colors duration-500 dotted-underline"
-	target="_blank"
-	title={description}
-	>{text}
-</a>
+{#if description}
+	<a
+		{href}
+		class="hover:text-blue-600 transition-colors duration-500 dotted-underline"
+		target="_blank"
+		title={description}
+		>{text}
+	</a>
+{:else}
+	<a {href} class="hover:text-blue-600 transition-colors duration-500 dotted-underline">{text} </a>
+{/if}
 
 <style lang="postcss">
 	.dotted-underline {
