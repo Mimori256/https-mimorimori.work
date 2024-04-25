@@ -8,7 +8,7 @@
 		<li class="list-disc mb-1">
 			<Link
 				href="https://www.mast.tsukuba.ac.jp/"
-				text="筑波大学 情報メディア創成学類 B3"
+				text="筑波大学 情報メディア創成学類 B4"
 				description="学類のページ"
 			/>
 		</li>
