@@ -14,13 +14,20 @@
 		</li>
 		<li class="list-disc mb-1">
 			<Link
+				href="http://www.nlp.mibel.cs.tsukuba.ac.jp/"
+				text="自然言語処理グループ"
+				description="研究室のページ"
+			/>
+		</li>
+		<li class="list-disc mb-1">
+			<Link
 				href="https://twitter.com/chesscr"
 				text="筑波大学 チェスサークル"
 				description="サークルの公式Twitter"
 			/>
 		</li>
 		<li class="list-disc mb-1">
-			<p>謎のメディア企業(バイト)</p>
+			<p>メディア企業(インターン)</p>
 		</li>
 	</ul>
 	<p class="mt-5" role="note">言語とWebが好き。</p>
